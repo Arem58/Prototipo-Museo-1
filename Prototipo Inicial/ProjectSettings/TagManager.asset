@@ -7,6 +7,10 @@ TagManager:
   - Object
   - Left Hand
   - Right Hand
+  - Meteor
+  - Sello
+  - Zapato
+  - Dona
   layers:
   - Default
   - TransparentFX
