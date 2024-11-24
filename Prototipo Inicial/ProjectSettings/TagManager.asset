@@ -11,6 +11,8 @@ TagManager:
   - Sello
   - Zapato
   - Dona
+  - Ground
+  - Wall
   layers:
   - Default
   - TransparentFX

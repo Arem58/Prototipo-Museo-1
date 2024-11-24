@@ -1042,7 +1042,11 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 754595253}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5869309432742568221, guid: 43f29f4aa21e9f045b5bc211ffa0ea53,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2116397620}
   m_SourcePrefab: {fileID: 100100000, guid: 43f29f4aa21e9f045b5bc211ffa0ea53, type: 3}
 --- !u!1 &1950983303 stripped
 GameObject:
@@ -1167,12 +1171,33 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2106894677}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2116397615 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5869309432742568221, guid: 43f29f4aa21e9f045b5bc211ffa0ea53,
+    type: 3}
+  m_PrefabInstance: {fileID: 1862503819}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2116397619 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6844406453018273823, guid: 43f29f4aa21e9f045b5bc211ffa0ea53,
     type: 3}
   m_PrefabInstance: {fileID: 1862503819}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2116397620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2116397615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 043d6e225d73e1242a830f70504ea881, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transform: {fileID: 823880142}
+  targetTagGround: Ground
+  targetTagWall: Wall
 --- !u!1 &2127586818
 GameObject:
   m_ObjectHideFlags: 0
@@ -1187,7 +1212,7 @@ GameObject:
   - component: {fileID: 2127586819}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
