@@ -10,7 +10,6 @@ public class ButtonPushChangeScene : MonoBehaviour
     [SerializeField] private string sceneName;
 
     [SerializeField] private Material skyboxMaterial;
-
     void Start()
     {
         // Configura el evento del botón para llamar a la función de cambio de escena
@@ -19,6 +18,17 @@ public class ButtonPushChangeScene : MonoBehaviour
 
     public void ChangeScene()
     {
+        //Guardar la posicion del jugador directamente en el ScriptableObject
+        GameObject player = GameObject.FindWithTag("Player");
+        if (player != null)
+        {
+            PlayerPositionManager positionManager = player.GetComponent<PlayerPositionManager>();
+            if (positionManager != null)
+            {
+                positionManager.SavePlayerPosition();
+            }
+        }
+        
         // Carga la escena específica asignada al botón en el inspector
         if (!string.IsNullOrEmpty(sceneName))
         {

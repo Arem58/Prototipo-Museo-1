@@ -421,6 +421,27 @@ MonoBehaviour:
   m_FixedScale: {x: 1, y: 1, z: 1}
   m_TargetBoundsSize: {x: 1, y: 1, z: 1}
   targetTag: Dona
+--- !u!1 &846818141 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7039695640351387846, guid: e52dbfb1eaabf0347902b60bbd6c0593,
+    type: 3}
+  m_PrefabInstance: {fileID: 2106894677}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &846818146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846818141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fb6b2417da28134f8f4d7b7e5acb87f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerData: {fileID: 11400000, guid: 1ae868934eadab645ad74ce639680f19, type: 2}
+  saveSceneName: Pruebas
+  resetSceneName: 
 --- !u!1 &863839837
 GameObject:
   m_ObjectHideFlags: 0
@@ -1526,10 +1547,20 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7039695640351387846, guid: e52dbfb1eaabf0347902b60bbd6c0593,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 8070919586669450201, guid: e52dbfb1eaabf0347902b60bbd6c0593,
         type: 3}
       propertyPath: m_Name
       value: XR Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8070919586669450201, guid: e52dbfb1eaabf0347902b60bbd6c0593,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1538,7 +1569,11 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1247929797}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7039695640351387846, guid: e52dbfb1eaabf0347902b60bbd6c0593,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 846818146}
   m_SourcePrefab: {fileID: 100100000, guid: e52dbfb1eaabf0347902b60bbd6c0593, type: 3}
 --- !u!1 &2106894678 stripped
 GameObject:
