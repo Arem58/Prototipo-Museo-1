@@ -298,6 +298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Place 1
+  skyboxMaterial: {fileID: 2100000, guid: 53056d3f7bfaf6841bc19e2295712c6d, type: 2}
 --- !u!4 &754595253 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 74c1a2b8759c9f746a76f9a3e2636930,
