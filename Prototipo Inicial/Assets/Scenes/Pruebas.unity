@@ -1195,7 +1195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 043d6e225d73e1242a830f70504ea881, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transform: {fileID: 823880142}
+  targetTransform: {fileID: 823880142}
   targetTagGround: Ground
   targetTagWall: Wall
 --- !u!1 &2127586818
