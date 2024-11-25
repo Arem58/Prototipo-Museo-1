@@ -25,7 +25,6 @@ public class ButtonPushChangeScene : MonoBehaviour
             PlayerPositionManager positionManager = player.GetComponent<PlayerPositionManager>();
             if (positionManager != null)
             {
-                Debug.Log("Se guardo las coordenadas del jugador");
                 positionManager.SavePlayerPosition();
             }
         }
