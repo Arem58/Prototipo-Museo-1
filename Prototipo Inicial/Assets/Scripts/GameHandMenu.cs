@@ -59,20 +59,29 @@ public class GameHandMenu : MonoBehaviour
 
     public void TeleportA()
     {
-        GameObject player = GameObject.FindWithTag("Player");
-        player.transform.position = positionA.transform.position;
+        if (positionA != null)
+        {
+            GameObject player = GameObject.FindWithTag("Player");
+            player.transform.position = positionA.transform.position;
+        }
     }
     
     public void TeleportB()
     {
-        GameObject player = GameObject.FindWithTag("Player");
-        player.transform.position = positionB.transform.position;
+        if (positionB != null)
+        {
+            GameObject player = GameObject.FindWithTag("Player");
+            player.transform.position = positionB.transform.position;
+        }
     }
     
     public void TeleportC()
     {
-        GameObject player = GameObject.FindWithTag("Player");
-        player.transform.position = positionC.transform.position;
+        if (positionC != null)
+        {
+            GameObject player = GameObject.FindWithTag("Player");
+            player.transform.position = positionC.transform.position;
+        }
     }
 
     public void HideAll()

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: PlayerData
   m_EditorClassIdentifier: 
   defaultPosition: {x: 0, y: 0, z: 0}
-  currentPosition: {x: 0, y: 0, z: 0}
-  currentRotation: {x: 0, y: 0, z: 0, w: 1}
-  turn: 1
+  currentPosition: {x: 4.6165338, y: -0.000000059604645, z: -1.9410701}
+  currentRotation: {x: -0, y: 0.6815695, z: -0, w: 0.7317534}
+  turn: 0
