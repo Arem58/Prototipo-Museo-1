@@ -2453,8 +2453,27 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2549134300425650349, guid: eef7fca7d1e8e224e8bf3703e038f023, type: 3}
+    - target: {fileID: 7887553262680904908, guid: eef7fca7d1e8e224e8bf3703e038f023,
+        type: 3}
+      propertyPath: m_StartingGroupMembers.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8566508507466619103, guid: eef7fca7d1e8e224e8bf3703e038f023,
+        type: 3}
+      propertyPath: m_LocomotionVignetteProviders.Array.data[0].m_LocomotionProvider
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8566508507466619103, guid: eef7fca7d1e8e224e8bf3703e038f023,
+        type: 3}
+      propertyPath: m_LocomotionVignetteProviders.Array.data[2].m_LocomotionProvider
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8578794504148936429, guid: eef7fca7d1e8e224e8bf3703e038f023,
+        type: 3}
+      propertyPath: m_TeleportInteractor
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 1583494649937344395, guid: eef7fca7d1e8e224e8bf3703e038f023, type: 3}
     - {fileID: 253268818788612598, guid: eef7fca7d1e8e224e8bf3703e038f023, type: 3}

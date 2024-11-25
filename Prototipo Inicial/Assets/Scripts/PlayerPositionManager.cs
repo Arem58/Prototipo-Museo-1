@@ -11,7 +11,6 @@ public class PlayerPositionManager : MonoBehaviour
     void Start()
     {
         string currentScene = SceneManager.GetActiveScene().name;
-        Debug.Log(currentScene);
 
         if (currentScene == saveSceneName)
         {
@@ -20,7 +19,6 @@ public class PlayerPositionManager : MonoBehaviour
         }
         else if (currentScene == resetSceneName)
         {
-            Debug.Log("Se resetean los datos");
             playerData.ResetPosition();
         }
     }
