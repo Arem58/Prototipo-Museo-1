@@ -29,6 +29,8 @@ public class GameHandMenu : MonoBehaviour
     [Header("Parameters scene")] 
     [SerializeField] private string sceneName;
     [SerializeField] private Material skyboxMaterial;
+
+    [SerializeField] private FadeScreen fadeScreen;
     
     // Start is called before the first frame update
     void Start()
@@ -63,6 +65,7 @@ public class GameHandMenu : MonoBehaviour
         {
             GameObject player = GameObject.FindWithTag("Player");
             player.transform.position = positionA.transform.position;
+            fadeScreen.FadeIn();
         }
     }
     
@@ -72,6 +75,7 @@ public class GameHandMenu : MonoBehaviour
         {
             GameObject player = GameObject.FindWithTag("Player");
             player.transform.position = positionB.transform.position;
+            fadeScreen.FadeIn();
         }
     }
     
@@ -81,6 +85,7 @@ public class GameHandMenu : MonoBehaviour
         {
             GameObject player = GameObject.FindWithTag("Player");
             player.transform.position = positionC.transform.position;
+            fadeScreen.FadeIn();
         }
     }
 
