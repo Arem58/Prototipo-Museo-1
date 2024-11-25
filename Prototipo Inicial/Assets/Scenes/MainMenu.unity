@@ -2115,8 +2115,24 @@ PrefabInstance:
     - {fileID: 253268818788612598, guid: eef7fca7d1e8e224e8bf3703e038f023, type: 3}
     - {fileID: 9115340092561959625, guid: eef7fca7d1e8e224e8bf3703e038f023, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4056039455376562000, guid: eef7fca7d1e8e224e8bf3703e038f023,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1744718946}
   m_SourcePrefab: {fileID: 100100000, guid: eef7fca7d1e8e224e8bf3703e038f023, type: 3}
+--- !u!114 &772118756 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8578794504148936429, guid: eef7fca7d1e8e224e8bf3703e038f023,
+    type: 3}
+  m_PrefabInstance: {fileID: 711731538}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9ac216f0eb04754b1d938aac6380b31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &865978133
 GameObject:
   m_ObjectHideFlags: 0
@@ -4356,6 +4372,26 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1744718941 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4056039455376562000, guid: eef7fca7d1e8e224e8bf3703e038f023,
+    type: 3}
+  m_PrefabInstance: {fileID: 711731538}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1744718946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744718941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 889f6ef14be0131488f37d21c55e0ea9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerData: {fileID: 11400000, guid: 1ae868934eadab645ad74ce639680f19, type: 2}
+  controllerManager: {fileID: 772118756}
 --- !u!1001 &1985036661
 PrefabInstance:
   m_ObjectHideFlags: 0
