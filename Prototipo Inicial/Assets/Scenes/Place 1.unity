@@ -522,6 +522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Pruebas
+  skyboxMaterial: {fileID: 2100000, guid: b36d1216dcc52f943be6a97de43a619b, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
