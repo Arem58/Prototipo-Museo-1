@@ -25,7 +25,12 @@ public class PlayerPositionManager : MonoBehaviour
 
     public void SavePlayerPosition()
     {
-        playerData.currentPosition = transform.localPosition;
-        playerData.currentRotation = transform.localRotation;
+        string currentScene = SceneManager.GetActiveScene().name;
+        
+        if (currentScene == saveSceneName)
+        {
+            playerData.currentPosition = transform.localPosition;
+            playerData.currentRotation = transform.localRotation;
+        }
     }
 }
