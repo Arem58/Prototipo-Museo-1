@@ -20,6 +20,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Place 4.unity
     guid: ce1ee93d7e5c463459f9dc9bf9bbe30e
+  - enabled: 1
+    path: Assets/Scenes/Pruebas.unity
+    guid: d96f61bebf5edd8488ccb3533bcd0b9e
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 2f47009a2e9f6b74e964045f00a91123
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 1be22fd867d6c334095f4b046f344620,
       type: 2}

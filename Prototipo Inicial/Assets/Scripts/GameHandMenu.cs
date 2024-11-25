@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class GameHandMenu : MonoBehaviour
 {
     [Header("UI Pages")] 
+    [SerializeField] private GameObject handMenu;
     [SerializeField] private GameObject mainMenu;
     [SerializeField] private GameObject options;
 
@@ -24,6 +25,10 @@ public class GameHandMenu : MonoBehaviour
     [SerializeField] private GameObject positionA;
     [SerializeField] private GameObject positionB;
     [SerializeField] private GameObject positionC;
+    
+    [Header("Parameters scene")] 
+    [SerializeField] private string sceneName;
+    [SerializeField] private Material skyboxMaterial;
     
     // Start is called before the first frame update
     void Start()
@@ -49,6 +54,7 @@ public class GameHandMenu : MonoBehaviour
     public void ReturnMainMenu()
     {
         HideAll();
+        SceneTransitionManager.singleton.GoToScene(sceneName, skyboxMaterial);
     }
 
     public void TeleportA()
@@ -71,8 +77,7 @@ public class GameHandMenu : MonoBehaviour
 
     public void HideAll()
     {
-        mainMenu.SetActive(false);
-        options.SetActive(false);
+        handMenu.SetActive(false);
     }
 
     public void EnableMainMenu()

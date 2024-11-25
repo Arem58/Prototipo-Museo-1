@@ -17,6 +17,10 @@ public class GameStartMenu : MonoBehaviour
     [SerializeField] private Button quitButton;
 
     public List<Button> returnButton;
+
+    [Header("Parameters scene")] 
+    [SerializeField] private string sceneName;
+    [SerializeField] private Material skyboxMaterial;
     
     // Start is called before the first frame update
     void Start()
@@ -41,6 +45,7 @@ public class GameStartMenu : MonoBehaviour
     public void startGame()
     {
         HideAll();
+        SceneTransitionManager.singleton.GoToScene(sceneName, skyboxMaterial);
     }
     
     public void HideAll()
