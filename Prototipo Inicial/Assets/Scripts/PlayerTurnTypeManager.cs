@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 
 public class PlayerTurnTypeManager : MonoBehaviour
 {
 
-    [SerializeField] private PlayerData playerData;
-    [SerializeField] private ActionBasedSnapTurnProvider snapTurn;
-    [SerializeField] private ActionBasedContinuousTurnProvider continuousTurn;
+    public PlayerData playerData;
+    [SerializeField] private ActionBasedControllerManager controllerManager;
     
     // Start is called before the first frame update
     void Start()
@@ -19,15 +19,24 @@ public class PlayerTurnTypeManager : MonoBehaviour
     public void ApplyPlayerPref()
     {
         int value = playerData.turn;
+
         if (value == 0)
         {
-            snapTurn.rightHandSnapTurnAction.action.Enable();
-            continuousTurn.rightHandTurnAction.action.Disable();
+            EnableSnapTurn();
         }
-        else if (value == 1)
+        else
         {
-            snapTurn.rightHandSnapTurnAction.action.Disable();
-            continuousTurn.rightHandTurnAction.action.Enable();
+            EnableContinuousTurn();
         }
+    }
+
+    private void EnableSnapTurn()
+    {
+        controllerManager.smoothTurnEnabled = false;
+    }
+    
+    private void EnableContinuousTurn()
+    {
+        controllerManager.smoothTurnEnabled = true;
     }
 }
