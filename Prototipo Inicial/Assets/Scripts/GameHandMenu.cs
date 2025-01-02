@@ -65,6 +65,7 @@ public class GameHandMenu : MonoBehaviour
         {
             GameObject player = GameObject.FindWithTag("Player");
             player.transform.position = positionA.transform.position;
+            player.transform.localRotation = positionA.transform.rotation;
             fadeScreen.FadeIn();
         }
     }
@@ -75,6 +76,7 @@ public class GameHandMenu : MonoBehaviour
         {
             GameObject player = GameObject.FindWithTag("Player");
             player.transform.position = positionB.transform.position;
+            player.transform.localRotation = positionB.transform.rotation;
             fadeScreen.FadeIn();
         }
     }
@@ -85,6 +87,7 @@ public class GameHandMenu : MonoBehaviour
         {
             GameObject player = GameObject.FindWithTag("Player");
             player.transform.position = positionC.transform.position;
+            player.transform.localRotation = positionC.transform.rotation;
             fadeScreen.FadeIn();
         }
     }

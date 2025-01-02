@@ -623,7 +623,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31399cbee53bdbf4da17fca2b279c55e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Pruebas
+  sceneName: Sala
   skyboxMaterial: {fileID: 2100000, guid: b36d1216dcc52f943be6a97de43a619b, type: 2}
 --- !u!1001 &2056412921
 PrefabInstance:

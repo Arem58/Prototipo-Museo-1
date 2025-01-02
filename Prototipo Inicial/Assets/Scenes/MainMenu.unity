@@ -1926,7 +1926,7 @@ MonoBehaviour:
   returnButton:
   - {fileID: 1994827754}
   - {fileID: 1094219382}
-  sceneName: Pruebas
+  sceneName: Sala
   skyboxMaterial: {fileID: 2100000, guid: b36d1216dcc52f943be6a97de43a619b, type: 2}
 --- !u!1 &633926392
 GameObject:
